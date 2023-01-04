@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
+.miami{
+padding-left: 20px;
+padding-right: 20px;
+width: 280px;
+height: 594px;
+background-color: var(--header-title-color);
+&__title{
+    width: 240px;
+    height: 73px;
+    margin-top: 64px;
+    left: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: -1.5px;
+    color: var(--section-title-color);
+}
+&__span{
+    color: var(--text-title-color);
+}
+&__list{
+    margin-top: 48px;
+}
+&__caption{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+    color: var(--text-title-color);
+}
+&__text{
+    margin-top: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px; 
+    line-height: 1.70;
+    color: var(--text-color);
+}
+&__strong{
+    color: var(--section-title-color);
+}
+}

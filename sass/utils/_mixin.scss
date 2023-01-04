@@ -1,0 +1,43 @@
+@mixin container($w: 320px, $mar: 0 auto, $pad: 0 20px) {
+        @if $w {
+          max-width: $w;
+      
+          @media screen and(min-width: 768px) {
+            max-width: 768px;
+            padding: 0 32px;
+          }
+      
+          @media screen and(min-width: 1200px) {
+            max-width: 1200px;
+            padding: 0 16px;
+          }
+        }
+      
+        @if $mar {
+          margin: $mar;
+        }
+      
+        @if $pad {
+          padding: $pad;
+        }
+      }
+
+@mixin fonts($ff,$fs,$fw,$lh,$ls,) {
+    @if$ff{
+        font-family: $ff;
+    }
+    @if $fs {
+        font-style: $fs;
+      }
+      @if $fw {
+        font-weight: $fw;
+      }
+    
+      @if $lh {
+        line-height: $lh;
+      }
+    
+      @if $ls {
+        letter-spacing: $ls;
+      }
+}

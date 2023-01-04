@@ -1,3 +1,9 @@
+@import './utils/mixin';
+@import'./utils/variables';
+// @import './utils/container';
 @import './component/header';
 @import './component/logo';
 @import './component/burger-menu';
+@import './component/miami';
+@import'./component/gallery';
+@import'./component/cons';

@@ -1,3 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
 .header{
-    background-image: url("../../images/body/body.jpg");
+    @include container;
+    padding-top: 24px;
+    height: 568px;
+    background-image: url("../../images/body/body.jpg"); 
+&__call{
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+    background-color: transparent;
+    border: none;
+   
+}
+&__title{
+    position: absolute;
+    width: 253px;
+    height: 99px;
+    left: 20px;
+    top:407px;
+    color: var(--header-title-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+&__span{
+    width: 35px;
+    height: 2px;
+    color: var(--header-title-color);
+}
 }

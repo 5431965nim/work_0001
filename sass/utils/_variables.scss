@@ -1,0 +1,41 @@
+:root{
+--header-title-color:#ffffff;
+--section-title-color:#000000;
+--section-secondary-color:#00aaef;
+--text-title-color:#0075ff;
+--text-color:#3E3E3E;
+--section-icon-color:#0075ff;
+--card-span-color: #9FADC2;
+--input-text-color:#B9C1CE;
+--cons-bgc-color:#F6F8FF;
+
+
+    // --primary-text-color: #757575;
+}
+li {
+    list-style: none;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    display: block;
+    padding-left: 0;
+  }
+  body{
+    margin: 0px;
+  }
