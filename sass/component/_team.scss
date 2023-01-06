@@ -1,0 +1,74 @@
+.team{
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 64px;
+    &__title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: -1.5px;
+  color: var(--section-title-color);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+    }
+&__list{
+  padding-top: 32px;
+}
+&__item{
+    width: 280px;
+    height: 336px;
+    margin-top: 48px;
+}
+&__item:first-child{
+    width: 280px;
+    height: 300px;
+    margin-top: 0px;
+}
+&__img{
+    width: 153px;
+    height: 153px;
+    margin: 0 auto;
+}
+&__caption{
+    padding-top: 28px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+    flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--section-icon-color);
+}
+&__span{
+    padding-top: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.90;
+    color: var(--card-span-color);
+    display: block;
+    flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+&__text{
+    padding-top: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.70;
+    color: var(--text-color);
+    flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+}

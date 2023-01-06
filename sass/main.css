@@ -10,6 +10,7 @@
   --card-span-color: #9FADC2;
   --input-text-color:#B9C1CE;
   --cons-bgc-color:#F6F8FF;
+  --input-bgc-color:#F7F8FF;
 }
 
 li {
@@ -43,6 +44,26 @@ body {
   margin: 0px;
 }
 
+.container {
+  min-width: 200px;
+  max-width: 100%;
+}
+@media screen and (min-width: 300px) {
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .header {
   max-width: 320px;
   margin: 0 auto;
@@ -50,6 +71,7 @@ body {
   padding-top: 24px;
   height: 568px;
   background-image: url("../../images/body/body.jpg");
+  max-width: 100%;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -168,12 +190,17 @@ body {
   border: none;
 }
 .gallery__title {
-  width: 105px;
-  height: 57px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
   padding-top: 64px;
+  letter-spacing: -1.5px;
   color: var(--section-title-color);
-  margin-left: auto;
-  margin-right: auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .gallery__item {
   margin-top: 32px;
@@ -232,6 +259,9 @@ body {
   line-height: 1;
   letter-spacing: -1.5px;
   color: var(--section-title-color);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .cons__caption {
   margin-top: 32px;
@@ -255,10 +285,30 @@ body {
   padding-top: 32px;
 }
 .cons__input {
-  display: block;
-  margin-bottom: 16px;
+  padding-left: 8px;
+  margin-top: 16px;
   width: 280px;
   height: 48px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  border: 1px solid var(--header-title-color);
+  border-radius: 8px;
+  color: var(--input-text-color);
+  background-color: var(--cons-bgc-color);
+}
+.cons__inputs {
+  width: 280px;
+  height: 48px;
+  padding-left: 8px;
+  margin-top: 0px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
   border: 1px solid var(--header-title-color);
   border-radius: 8px;
   color: var(--input-text-color);
@@ -267,8 +317,213 @@ body {
 .cons__btn {
   width: 280px;
   height: 56px;
+  margin-top: 32px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.15;
   border: 1px solid var(--section-icon-color);
   border-radius: 10px;
   background-color: var(--section-icon-color);
   color: var(--header-title-color);
+}
+
+.team {
+  margin: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 64px;
+}
+.team__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: -1.5px;
+  color: var(--section-title-color);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.team__list {
+  padding-top: 32px;
+}
+.team__item {
+  width: 280px;
+  height: 336px;
+  margin-top: 48px;
+}
+.team__item:first-child {
+  width: 280px;
+  height: 300px;
+  margin-top: 0px;
+}
+.team__img {
+  width: 153px;
+  height: 153px;
+  margin: 0 auto;
+}
+.team__caption {
+  padding-top: 28px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--section-icon-color);
+}
+.team__span {
+  padding-top: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--card-span-color);
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.team__text {
+  padding-top: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-color);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contacts {
+  margin: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 64px;
+}
+.contacts__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
+  color: var(--section-title-color);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.contacts__list {
+  padding-top: 32px;
+}
+.contacts__caption {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--card-span-color);
+}
+.contacts__item {
+  margin-top: 24px;
+}
+.contacts__item:first-child {
+  margin-top: 0px;
+}
+.contacts__link {
+  margin-top: 8px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-color);
+}
+.contacts__form {
+  padding-top: 32px;
+}
+.contacts__input {
+  margin-top: 16px;
+  width: 280px;
+  height: 48px;
+  padding-left: 8px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  border: 1px solid var(--header-title-color);
+  border-radius: 8px;
+  color: var(--input-text-color);
+  background-color: var(--cons-bgc-color);
+}
+.contacts__inputs {
+  width: 280px;
+  height: 48px;
+  padding-left: 8px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  border: 1px solid var(--header-title-color);
+  border-radius: 8px;
+  color: var(--input-text-color);
+  background-color: var(--cons-bgc-color);
+}
+.contacts__comment {
+  width: 280px;
+  height: 144px;
+  padding-left: 8px;
+  margin-top: 16px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  border: 1px solid var(--header-title-color);
+  border-radius: 8px;
+  color: var(--input-text-color);
+  background-color: var(--cons-bgc-color);
+}
+.contacts__btn {
+  width: 280px;
+  height: 56px;
+  margin-top: 32px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.15;
+  border: 1px solid var(--section-icon-color);
+  border-radius: 10px;
+  background-color: var(--section-icon-color);
+  color: var(--header-title-color);
+}
+
+.footer {
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 32px;
+  width: 320px;
+  height: 206px;
+  box-sizing: border-box;
+  background-image: url("../images/footer/Footer-min.png");
+  max-width: 100%;
+}
+.footer__svg {
+  fill: #fff;
+  width: 77px;
+  height: 50px;
+  position: absolute;
+  left: 122px;
+  margin-top: 132px;
 }/*# sourceMappingURL=main.css.map */

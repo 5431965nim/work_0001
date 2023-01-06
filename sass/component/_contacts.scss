@@ -1,46 +1,54 @@
-.cons{
-    padding-top: 64px;
-    padding-left: 20px;
+.contacts{
+    margin: 0;
     padding-right: 20px;
-    list-style: none;
+    padding-left: 20px;
+    padding-top: 64px;
     &__title{
     font-family: 'Roboto';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 36px;
-   line-height: 1;
-   letter-spacing: -1.5px;
-   color: var(--section-title-color);
-   flex-direction: column;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+    color: var(--section-title-color);
+    flex-direction: column;
   align-items: center;
   text-align: center;
     }
-    &__caption{
-        margin-top: 32px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 1.25;
-        color: var(--section-icon-color);   
+    &__list{
+    padding-top: 32px;
+
     }
-    &__text{
-        padding-top: 16px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.70;
-        color: var(--text-color);
+    &__caption{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.90;
+    color: var(--card-span-color);
+    }
+    &__item{
+    margin-top: 24px;
+    }
+    &__item:first-child{
+    margin-top: 0px;
+    }
+    &__link{
+    margin-top: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.70;
+    color: var(--text-color);
     }
     &__form{
         padding-top: 32px;
     }
     &__input{
-        padding-left: 8px;
         margin-top: 16px;
         width: 280px;
         height: 48px;
+        padding-left: 8px;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
@@ -55,7 +63,6 @@
         width: 280px;
         height: 48px;
         padding-left: 8px;
-        margin-top: 0px;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
@@ -66,10 +73,25 @@
         color: var(--input-text-color);
         background-color: var(--cons-bgc-color);
     }
+    &__comment{
+        width: 280px;
+        height: 144px;
+        padding-left: 8px;
+        margin-top: 16px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1;   
+        border: 1px solid var(--header-title-color);
+        border-radius: 8px;
+        color: var(--input-text-color);
+        background-color: var(--cons-bgc-color);
+    }
     &__btn{
         width: 280px;
         height: 56px;
-        margin-top: 32px;
+        margin-top: 32px;   
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -80,4 +102,6 @@
         background-color: var(--section-icon-color);
         color: var(--header-title-color);
     }
+    
+    
 }

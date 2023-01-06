@@ -1,5 +1,6 @@
 @import './utils/mixin';
 @import'./utils/variables';
+@import'./utils/container';
 // @import './utils/container';
 @import './component/header';
 @import './component/logo';
@@ -7,3 +8,6 @@
 @import './component/miami';
 @import'./component/gallery';
 @import'./component/cons';
+@import'./component/team';
+@import'./component/contacts';
+@import'./component/footer';

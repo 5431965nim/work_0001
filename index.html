@@ -104,7 +104,7 @@
                 <form action="#" class="cons__form">
                    <div class="cons__box">
                     <label for="user-name" class="cons__label">
-                        <input placeholder="Name" type="text" name="user-name" id="user-name" class="cons__input">
+                        <input placeholder="Name" type="text" name="user-name" id="user-name" class="cons__inputs">
                     </label>
                    </div>
                    <div class="cons__box">
@@ -124,11 +124,11 @@
         <section class="team">
         <div class="container">
             <h2 class="team__title">
-                testimonials
+                Testimonials
             </h2>
             <ul class="team__list">
                 <li class="team__item">
-                    <img src="" alt="">
+                    <img class="team__img" src="./images/team/Leslie-min.jpg" alt="leslie">
                     <h3 class="team__caption">
                         Leslie Mckinney
                     </h3>
@@ -136,7 +136,7 @@
                     <p class="team__text">Nice work, Certificates National Association of Realtors (USA)</p>
                 </li>
                 <li class="team__item">
-                    <img src="" alt="">
+                    <img class="team__img" src="./images/team/Scarlett-min.jpg" alt="scarlett">
                     <h3 class="team__caption">
                         Scarlett Hawkins
                     </h3>
@@ -144,7 +144,7 @@
                     <p class="team__text">My soul is illuminated by an unearthly joy, as these beautiful spring morning, which I enjoy with all my heart</p>
                 </li>
                 <li class="team__item">
-                    <img src="" alt="">
+                    <img class="team__img" src="./images/team/Max-min.jpg" alt="max">
                     <h3 class="team__caption">
                         Max Henry
                     </h3>
@@ -157,31 +157,56 @@
         <section class="contacts">
            <div class="container">
             <h2 class="contacts__title">
-                contact us 
+                Contact us 
             </h2>
             <ul class="contacts__list">
                 <li class="contacts__item">
-                    <h3 class="cotacts__caption">
+                    <h3 class="contacts__caption">
                         Phone
                     </h3>
-                    <a href="tel:+1 234 5555-55-55" class="contacts__coll">+1 234 5555-55-55</a>
+                    <a href="tel:+1 234 5555-55-55" class="contacts__link">+1 234 5555-55-55</a>
                 </li>
-                <li class="cotacts__item">
+                <li class="contacts__item">
                     <h3 class="contacts__caption">
                         Email
                     </h3>
-                    <a href="mailto:hello@miami.com" class="contacts__gmail">hello@miami.com</a>
+                    <a href="mailto:hello@miami.com" class="contacts__link">hello@miami.com</a>
                 </li>
                 <li class="contacts__item">
-                    <p class="contacts__text">
-                        400 first ave. n.suite 700 <br>
-                        Minneapolis, MN 55401
-                    </p>
+                    <h3 class="contacts__caption">Address</h3>
+                    <a href="#" class="contacts__link">                       400 first ave. n.suite 700 <br>
+                    Minneapolis, MN 55401</a>
                 </li>
             </ul>
+            <form class="contacts__form">
+                <div class="contacts__box">
+                    <label for="name" class="contacts__label">
+                    <input placeholder="Name" type="text" name="name" id="name" class="contacts__inputs">
+                    </label>
+                </div>
+                 <div class="contacts__box">
+                <label for="mail" class="contacts__label">
+                <input placeholder="Email" type="mail" name="mail" id="mail" class="contacts__input">
+                </label>
+                 </div>  
+               
+               <div class="contacts__box">
+                <label for="comment" class="contacts__label">
+                <textarea placeholder="Message" name="comment" id="comment" cols="30" rows="10" class="contacts__comment"></textarea>
+                </label> 
+               </div>
+            </form>
+            <button type="submit" class="contacts__btn">Consultation</button>
            </div>
         </section>   
     </main>
+    <footer class="footer">
+        <div class="container">
+            <svg class="footer__svg">
+                <use class="footer__icon" href="./images/icon/logo/logo.svg#Logo"></use>
+            </svg>
+        </div>
+    </footer>
 </body>
 </html>
 
